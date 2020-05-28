@@ -58,7 +58,7 @@ getNextQuestion = () =>{
     if(availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score);
         //Go to the End Page
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
     questionCounter++;
     progressText.innerHTML="Question"+questionCounter + "/" + MAX_QUESTIONS;
